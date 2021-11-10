@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapcon{
+    background: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+#wrapcon p{
+    color: hsl(243, 100%, 93%);
+    font-size: 14px;
+}
+
+.row{
+    width: 100%;
+}
+
+#firstcol{
+    height: 200px;
+    background: hsl(228, 56%, 26%);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px 120px 10px 10px;
+    
+}
+
+
+#file_icons{
+    margin-top: 30px;
+    display: flex;
+}
+
+#file_icons span{
+    background: hsl(229, 57%, 11%);
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+
+#secondcol{
+    border-radius: 10px;
+    margin-top: 20px;
+    background: hsl(228, 56%, 26%);
+    padding: 40px;
+    text-align: center;
+}
+
+
+
+#storage_bar{
+    width: 100%;
+    height: 20px;
+    border-radius: 20px;
+    background: hsla(229, 57%, 11%, 0.638);
+    padding: 2px;
+    margin: 10px 0;
+}
+
+#storage_bar div{
+    border-radius: 20px;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2px;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+#storage_bar div div{
+    height: 12px;
+    width: 12px;
+    border-radius: 12px;
+    background: white;
+}
+
+#storage_text{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+
+#storage_pop{
+    width: fit-content;
+    padding: 20px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    position: relative;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+#storage_pop p{
+    color: hsl(229, 7%, 55%);
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*for the responsieve screen of md*/
+@media screen and (min-width:768px){
+
+    #wrapcon{
+        background: url(images/bg-desktop.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-color: hsl(229, 57%, 11%);
+    }
+
+    .row{
+        max-width: 1000px;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    
+    #firstcol{
+        width: 40%;
+        margin: 10px;
+    }
+
+    #secondcol{
+        width: 60%;
+        margin: 10px;
+        text-align: left;
+    }
+
+    #storage_pop{
+        position: absolute;
+        left: 85%;
+        top: 5px;
+    }
+
+    #angle{
+        width: 0;
+        height: 0;
+        border: 20px solid white;
+        position: absolute;
+        bottom: -20px;
+        right: 0;
+        border-bottom: 20px solid transparent;
+        border-left: 20px solid transparent;
+    }
+
+
+}
+
+
+
+
+/*for the responsieve screen of lg*/
+@media screen and (min-width:992px){
+    
+}
